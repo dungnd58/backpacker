@@ -1,0 +1,123 @@
+
+.introduction-container {
+    margin-top: 65%;
+    text-align: center;
+    background-color: white;
+    font-family: Delius;
+
+    .introduction-container__big-title {
+        font-size: 3rem;
+        color: #2f2933;
+        font-weight: bolder;
+    }
+
+    .introduction-container__quote {
+        font-size: 1.875rem;
+        color: #595a5a;
+
+        .home-quote:first-child {
+            font-style: italic
+        }
+    }
+
+    .sml-section-divider {
+        background: #facd20; 
+        margin: 20px auto 30px;
+        height: 5px;
+        width: 100px;
+    }
+
+    .introduction-container__long-desc {
+        font-size: 1.5rem;
+        color: #6a7885;
+        line-height: 2;
+    }
+
+    @media (max-width: $TABLET){
+        .introduction-container__big-title {
+            font-size: 2.5rem;
+            padding: .9375rem 0;
+        }
+    }
+
+    @media (max-width: $BIG_PHONE){
+        .introduction-container__big-title {
+            font-size: 2.25rem;
+            padding: 1rem 0;
+        }
+
+        .introduction-container__quote {
+            font-size: 1.5rem;
+        }
+
+        .introduction-container__long-desc {
+            font-size: 1.275rem;
+            color: #6a7885;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+
+.introduction-container__list-location {
+    margin-top: 50px;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #48525F;
+    font-family: Delius;
+
+    li {
+        list-style-type: none;
+    }
+
+    .locations-list-container {
+        text-align: center;
+        margin-bottom: 0;
+
+        .locations-list__item {
+            display: inline-block;
+            color: white;
+            width: 200px;
+            min-height: 270px;
+            margin: 15px;
+            position: relative;
+
+            .location-item-container {
+                position: absolute;
+            }
+
+            .location__image {
+                cursor: pointer;
+                margin: 10px auto;
+                background-size: cover;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                border: 2px solid white;
+                -webkit-transition: all 0.5s linear; /* For Safari 3.1 to 6.0 */
+                -moz-transition: all 0.5s linear; /* For Chrome */
+                -o-transition: all 0.5s linear; /* For Opera */
+                transition: all 0.5s linear;
+
+                &:hover {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .location__name {
+                line-height: 2;
+                font-size: 2rem;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .location__short-desc {
+                font-size: 1.25rem;
+                line-height: 2;
+                font-style: italic;
+            }
+        }
+    }
+}

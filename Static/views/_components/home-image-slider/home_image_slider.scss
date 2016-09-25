@@ -1,0 +1,13 @@
+.home-slider-container {
+    margin-top: -43px;
+    width: 100%;
+
+    .home-slider-wrap {
+        position: relative;
+
+        .home-slider-image {
+            width: 100%;
+            position: absolute;
+        }
+    }
+}

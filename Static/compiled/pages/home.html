@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title> Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Delius">
+    
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="https://use.fontawesome.com/38a0f644b3.js"></script>
+    <link href="/css/screen.css" rel="stylesheet" media="screen" />
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+</head>
+
+<body class="bg-white">
+
+    
+<body>
+    <div>
+        
+<div class="home-header">
+    <div class="home-header__logo-container">
+        <a class="home-header__logo-wrap" href="#">
+            <span class="backpacker-logo">BackPacker</span>
+        </a>
+    </div>
+
+    <div class="home-header__mobile-space"></div>
+
+    <div class="home-header__right">
+        <div class="home-header__modal-link">
+            <span>Sign Up</span>
+        </div>
+        <div class="home-header__modal-link">
+            <span>Log In</span>
+        </div>
+    </div>
+</div>
+
+        
+<div class="home-slider-container">
+    <div class="home-slider-wrap">
+        
+        <img class="home-slider-image" src="/img/woman_phone.jpg" />
+        
+        <img class="home-slider-image" src="/img/man_mockup_n.jpg" />
+        
+    </div>
+</div>
+
+<script>
+    $(".home-slider-wrap > img:gt(0)").hide();
+
+    setInterval(function () {
+        $('.home-slider-wrap > img:first')
+          .fadeOut(1500)
+          .next()
+          .fadeIn(1500)
+          .end()
+          .appendTo('.home-slider-wrap');
+    }, 4000);
+</script>
+
+
+
+        
+<div class="introduction-container container">
+    <div class="introduction-container__big-title">
+        <p class="home-big-title">
+            We Connect Travellers From All Around The World
+        </p>
+    </div>
+
+    <div class="introduction-container__quote">
+        <p class="home-quote">
+           "We travel, some of us forever, to seek other places, other lives, other souls."
+        </p>
+        <p class="home-quote">
+            - Anais Nin -
+        </p>
+    </div>
+
+    <div class="sml-section-divider"></div>
+
+    <div class="introduction-container__long-desc">
+        Ideas, business, and technologies never go without one another. We offer complete and custom services with a combination of technologies, systems, and software development - alongside world-class client relationship management to ensure quality and satisfaction.
+    </div>
+</div>
+
+<div class="introduction-container__list-location">
+    <div class="locations-list-container container">
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/img/sapa.jpg)">
+                </div>
+                <div class="location__name">
+                    Sapa, Lao Cai
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/img/hanoi.jpg)">
+                </div>
+                <div class="location__name">
+                    Hanoi
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/img/dalat.jpg)">
+                </div>
+                <div class="location__name">
+                    Dalat
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    $(".location__image").hover(function () {
+        $(this).siblings(".location__short-desc").fadeOut(500);
+    }, function () {
+        $(this).siblings(".location__short-desc").fadeIn(500);
+    });
+</script>
+    </div>
+</body>
+
+    <script src="/js/lib/bower/require.js" data-main="/js/main-async"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+<div class="introduction-container container">
+    <div class="introduction-container__big-title">
+        <p class="home-big-title">
+            We Connect Travellers From All Around The World
+        </p>
+    </div>
+
+    <div class="introduction-container__quote">
+        <p class="home-quote">
+           "We travel, some of us forever, to seek other places, other lives, other souls."
+        </p>
+        <p class="home-quote">
+            - Anais Nin -
+        </p>
+    </div>
+
+    <div class="sml-section-divider"></div>
+
+    <div class="introduction-container__long-desc">
+        Ideas, business, and technologies never go without one another. We offer complete and custom services with a combination of technologies, systems, and software development - alongside world-class client relationship management to ensure quality and satisfaction.
+    </div>
+</div>
+
+<div class="introduction-container__list-location">
+    <div class="locations-list-container container">
+        {{#each home_featured_location.items}}
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url({{image}})">
+                </div>
+                <div class="location__name">
+                    {{name}}
+                </div>
+                <div class="location__short-desc">
+                    {{description}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<script>
+    $(".location__image").hover(function () {
+        $(this).siblings(".location__short-desc").fadeOut(500);
+    }, function () {
+        $(this).siblings(".location__short-desc").fadeIn(500);
+    });
+</script>

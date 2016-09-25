@@ -1,0 +1,22 @@
+
+<div class="home-slider-container">
+    <div class="home-slider-wrap">
+        {{#each home_image_slider.items}}
+        <img class="home-slider-image" src="{{bg-image}}" />
+        {{/each}}
+    </div>
+</div>
+
+<script>
+    $(".home-slider-wrap > img:gt(0)").hide();
+
+    setInterval(function () {
+        $('.home-slider-wrap > img:first')
+          .fadeOut(1500)
+          .next()
+          .fadeIn(1500)
+          .end()
+          .appendTo('.home-slider-wrap');
+    }, 4000);
+</script>
+

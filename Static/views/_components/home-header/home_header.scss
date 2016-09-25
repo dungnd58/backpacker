@@ -1,0 +1,65 @@
+.home-header {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: relative;
+    z-index: 5;
+    font-family: Delius;
+
+    background: none; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0) 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(to bottom, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0) 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0) 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0) 100%); /* Standard syntax */
+
+    .home-header__logo-wrap {
+        text-decoration: none;
+    }
+
+    .home-header__logo-container {
+        float: left;
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0 5px;
+
+        @media (max-width: $TABLET){
+            font-size: 16px;
+        }
+
+        @media (max-width: $PHONE){
+            font-size: 12px;
+        }
+
+        .backpacker-logo {
+            color: white;
+        }
+    }
+
+    .home-header__mobile-space {
+        float: left;
+        flex: 1px;
+    }
+
+    .home-header__right {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+
+        .home-header__modal-link {
+            cursor: pointer;
+            padding: 10px;
+
+            @media (max-width: $TABLET){
+                font-size: 12px;
+            }
+
+            @media (max-width: $PHONE){
+                font-size: 10px;
+            }
+        }
+    }
+
+    
+}
