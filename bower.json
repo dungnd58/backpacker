@@ -1,0 +1,32 @@
+{
+  "name": "backpacker-website",
+  "description": "owner ducdung.ngo",
+  "main": "Gruntfile.js",
+  "authors": [
+    "ducdungngo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "backpacker"
+  ],
+  "homepage": "backpacker.net",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-form": "^3.46.0",
+    "jquery-validation": "^1.15.1",
+    "requirejs": "^2.3.2",
+    "handlebars": "^4.0.5",
+    "handlebars-helpers": "^2.0.0",
+    "requirejs-plugins": "^1.0.3"
+  },
+  "devDependencies": {
+    "jquery": "^3.1.1"
+  }
+}
