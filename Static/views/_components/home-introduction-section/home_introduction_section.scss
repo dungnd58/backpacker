@@ -1,6 +1,6 @@
 
 .introduction-container {
-    margin-top: 65%;
+    margin-top: 100px;
     text-align: center;
     background-color: white;
     font-family: Delius;
@@ -41,6 +41,8 @@
     }
 
     @media (max-width: $BIG_PHONE){
+        margin-top: 50px;
+
         .introduction-container__big-title {
             font-size: 2.25rem;
             padding: 1rem 0;

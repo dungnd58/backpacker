@@ -1,11 +1,15 @@
 {
     "items": [
         {
-            "bg-image": "/img/woman_phone.jpg"
+            "bg-image": "/img/paris.jpg"
         },
 
         {
-            "bg-image": "/img/man_mockup_n.jpg"
+            "bg-image": "/img/london.jpg"
+        },
+
+        {
+            "bg-image": "/img/singapore.jpg"
         }
     ]
 }
