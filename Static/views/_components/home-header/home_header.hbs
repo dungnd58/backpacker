@@ -58,6 +58,9 @@
         $(".home-right-fading").fadeOut(250);
 
         $(".home-left-navigation").removeClass("left-navigation--shown");
+
+        //Disable scrolling
+        $(document.body).removeClass("overflow-hidden");
     });
 
     //Open left header navigation
@@ -67,6 +70,8 @@
         $(".home-left-navigation").addClass("left-navigation--shown");
 
         $(".home-right-fading").fadeIn(250);
+
+        $(document.body).addClass("overflow-hidden");
     });
 </script>
 
@@ -93,7 +98,7 @@
     <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Login to your Backpacker account!</h4>
+                <h4 class="modal-title">Login to your account!</h4>
             </div>
             <div class="modal-body">
                 <div class="modal-body__google-login-button">
@@ -104,6 +109,31 @@
                         <span>Continue with Google</span>
                     </div>
                 </div>
+
+                <!-- Log in Form -->
+                <form class="modal-body__form-login-container">
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="text" name="b_email" id="b_email" placeholder="Username" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="password" name="b_password" id="b_password" placeholder="Password" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__submit">
+                        <input type="submit" value="Login"/>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <i class="fa fa-times close backpacker-close-button" data-dismiss="modal" aria-hidden="true"></i>

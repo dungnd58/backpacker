@@ -160,6 +160,10 @@
 .backpacker-modal-dialog {
     padding: 10vh 5vh !important;
 
+    .model-content {
+        background-color: $WHITE_GRAY;
+    }
+
     .modal-header {
         text-align: center;
     }
@@ -169,7 +173,7 @@
         color: $DARK_GRAY;
 
         @media (max-width: $BIG_PHONE){
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
@@ -177,19 +181,94 @@
         .modal-body__google-login-button {
             background-color: $GG_RED;
             color: $WHITE;
-            width: 80%;
+            width: 85%;
+            cursor: pointer;
             height: 40px;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             margin: auto;
             border-radius: 5px;
+            text-align: center;
 
             .google-login-button__icon {
                 float: left;
                 padding: 9px 10px;
+                width: 40px;
+                border-right: 1px solid #fff;
             }
 
             .google-login-button__text {
                 padding: 9px 10px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            @media (max-width: $BIG_PHONE) {
+                width: 100%;
+                font-size: 1.5rem;
+            }
+        }
+
+        .modal-body__form-login-container {
+            color: $DARK_GRAY;
+            width: 85%;
+            font-size: 1.75rem;
+            margin: auto;
+            border-radius: 5px;
+            margin: 20px auto;
+
+            .form-login-input__item {
+                margin: auto;
+
+                .form-login-input__icon {
+                    float: left;
+                    padding: 10px 7px;
+                    width: 40px;
+                    font-size: 2.5rem;
+                    opacity: 0.5;
+                }
+
+                .form-login-input__field {
+                    padding: 9px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                    input {
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                        padding-left: 10px;
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+
+            .form-login-input__submit {
+                color: $WHITE;
+                margin: 20px 0;
+                    
+                input {
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                    border: $GREEN_SUBMIT;
+                    padding: 5px;
+                    text-align: center;
+                    background-color: $GREEN_SUBMIT;
+                    transition: all 250ms ease;
+
+                    &:hover {
+                        background-color: #138f18;
+                    }
+                }
+
+                
+            }
+
+            @media (max-width: $BIG_PHONE) {
+                width: 100%;
+                font-size: 1.5rem;
             }
         }
     }
@@ -204,4 +283,8 @@
             }
         }
     }
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

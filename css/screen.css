@@ -3227,6 +3227,8 @@ hr {
 
 .backpacker-modal-dialog {
   padding: 10vh 5vh !important; }
+  .backpacker-modal-dialog .model-content {
+    background-color: #F0F1F3; }
   .backpacker-modal-dialog .modal-header {
     text-align: center; }
   .backpacker-modal-dialog .modal-title {
@@ -3234,26 +3236,84 @@ hr {
     color: #2f2933; }
     @media (max-width: 768px) {
       .backpacker-modal-dialog .modal-title {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
   .backpacker-modal-dialog .modal-body .modal-body__google-login-button {
     background-color: #d03a3c;
     color: #fff;
-    width: 80%;
+    width: 85%;
+    cursor: pointer;
     height: 40px;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: auto;
-    border-radius: 5px; }
+    border-radius: 5px;
+    text-align: center; }
     .backpacker-modal-dialog .modal-body .modal-body__google-login-button .google-login-button__icon {
       float: left;
-      padding: 9px 10px; }
+      padding: 9px 10px;
+      width: 40px;
+      border-right: 1px solid #fff; }
     .backpacker-modal-dialog .modal-body .modal-body__google-login-button .google-login-button__text {
-      padding: 9px 10px; }
+      padding: 9px 10px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+    @media (max-width: 768px) {
+      .backpacker-modal-dialog .modal-body .modal-body__google-login-button {
+        width: 100%;
+        font-size: 1.5rem; } }
+  .backpacker-modal-dialog .modal-body .modal-body__form-login-container {
+    color: #2f2933;
+    width: 85%;
+    font-size: 1.75rem;
+    margin: auto;
+    border-radius: 5px;
+    margin: 20px auto; }
+    .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__item {
+      margin: auto; }
+      .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__item .form-login-input__icon {
+        float: left;
+        padding: 10px 7px;
+        width: 40px;
+        font-size: 2.5rem;
+        opacity: 0.5; }
+      .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__item .form-login-input__field {
+        padding: 9px 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap; }
+        .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__item .form-login-input__field input {
+          width: 100%;
+          height: 40px;
+          border-radius: 5px;
+          padding-left: 10px;
+          border: 1px solid rgba(0, 0, 0, 0.3); }
+    .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__submit {
+      color: #fff;
+      margin: 20px 0; }
+      .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__submit input {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: #5cb85c;
+        padding: 5px;
+        text-align: center;
+        background-color: #5cb85c;
+        transition: all 250ms ease; }
+        .backpacker-modal-dialog .modal-body .modal-body__form-login-container .form-login-input__submit input:hover {
+          background-color: #138f18; }
+    @media (max-width: 768px) {
+      .backpacker-modal-dialog .modal-body .modal-body__form-login-container {
+        width: 100%;
+        font-size: 1.5rem; } }
   .backpacker-modal-dialog .modal-footer .backpacker-close-button {
     opacity: 0.8;
     font-size: 2.75rem; }
     @media (max-width: 768px) {
       .backpacker-modal-dialog .modal-footer .backpacker-close-button {
         font-size: 2.5rem; } }
+
+.overflow-hidden {
+  overflow: hidden; }
 
 .home-slider-container {
   margin-top: -48px;
