@@ -9,10 +9,10 @@
     <div class="home-header__mobile-space"></div>
 
     <div class="home-header__right">
-        <div class="home-header__modal-link">
+        <div class="home-header__modal-link" data-toggle="modal" data-target="#signUpModal">
             <span>Sign Up</span>
         </div>
-        <div class="home-header__modal-link">
+        <div class="home-header__modal-link" data-toggle="modal" data-target="#logInModal">
             <span>Log In</span>
         </div>
         <div class="home-header__modal-link">
@@ -28,13 +28,13 @@
 <div class="home-left-navigation">
     <div class="home-left-navigation__container">
         <div class="home-left-navigation__back-button">
-            <i class="fa fa-times close-left-navigation" aria-hidden="true"></i>
+            <i class="fa fa-times backpacker-close-button" aria-hidden="true"></i>
         </div>
         <div class="home-left-navigation__list-link">
-            <div class="home-header__modal-link">
+            <div class="home-header__modal-link" data-toggle="modal" data-target="#signUpModal">
                 <span>Sign Up</span>
             </div>
-            <div class="home-header__modal-link">
+            <div class="home-header__modal-link" data-toggle="modal" data-target="#logInModal">
                 <span>Log In</span>
             </div>
             <div class="home-header__modal-link">
@@ -48,11 +48,8 @@
 <div class="home-right-fading close-left-navigation"></div>
 
 <script>
-
     //Hide navigation when reload page
     $(document).ready(function() {
-        $(".home-left-navigation").addClass("left-navigation--hidden");
-
          $(".home-right-fading").fadeOut(0);
     });
 
@@ -72,3 +69,45 @@
         $(".home-right-fading").fadeIn(250);
     });
 </script>
+
+<!-- MODAL BOOTSTRAP -->
+<div id="signUpModal" class="modal fade" role="dialog">
+    <div class="modal-dialog backpacker-modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign up and start your journey!</h4>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-times close backpacker-close-button" data-dismiss="modal" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="logInModal" class="modal fade" role="dialog">
+    <div class="modal-dialog backpacker-modal-dialog">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login to your Backpacker account!</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__google-login-button">
+                    <div class="google-login-button__icon">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                     <div class="google-login-button__text">
+                        <span>Continue with Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <i class="fa fa-times close backpacker-close-button" data-dismiss="modal" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>

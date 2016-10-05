@@ -113,20 +113,10 @@
     background-color: $WHITE;
     color: $DARK_GRAY;
     padding: 30px 45px;
-    transition: all 250ms ease;
+    transition: width 250ms ease;
 
     .home-left-navigation__back-button {
         text-align: right;
-    }
-
-    i {
-        color: $YELLOW;
-        font-size: 3.5rem;
-        transition: all 250ms ease;
-
-        &:hover {
-            color: $BLUE_GRAY;
-        }
     }
 
     .home-left-navigation__list-link {
@@ -147,6 +137,16 @@
     }
 }
 
+.backpacker-close-button {
+    color: $YELLOW;
+    font-size: 3.5rem;
+    transition: all 250ms ease;
+
+    &:hover {
+        color: $BLUE_GRAY;
+    }
+}
+
 .left-navigation--shown {
     left: 0;
 }
@@ -155,4 +155,53 @@
     width: 100%;
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.backpacker-modal-dialog {
+    padding: 10vh 5vh !important;
+
+    .modal-header {
+        text-align: center;
+    }
+
+    .modal-title {
+        font-size: 2rem;
+        color: $DARK_GRAY;
+
+        @media (max-width: $BIG_PHONE){
+            font-size: 1.5rem;
+        }
+    }
+
+    .modal-body {
+        .modal-body__google-login-button {
+            background-color: $GG_RED;
+            color: $WHITE;
+            width: 80%;
+            height: 40px;
+            font-size: 1.5rem;
+            margin: auto;
+            border-radius: 5px;
+
+            .google-login-button__icon {
+                float: left;
+                padding: 9px 10px;
+            }
+
+            .google-login-button__text {
+                padding: 9px 10px;
+            }
+        }
+    }
+
+    .modal-footer {
+        .backpacker-close-button {
+            opacity: 0.8;
+            font-size: 2.75rem;
+
+            @media (max-width: $BIG_PHONE){
+                font-size: 2.5rem;
+            }
+        }
+    }
 }

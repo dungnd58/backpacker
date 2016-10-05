@@ -3196,15 +3196,9 @@ hr {
   background-color: #fff;
   color: #2f2933;
   padding: 30px 45px;
-  transition: all 250ms ease; }
+  transition: width 250ms ease; }
   .home-left-navigation .home-left-navigation__back-button {
     text-align: right; }
-  .home-left-navigation i {
-    color: #facd20;
-    font-size: 3.5rem;
-    transition: all 250ms ease; }
-    .home-left-navigation i:hover {
-      color: #48525F; }
   .home-left-navigation .home-left-navigation__list-link .home-header__modal-link {
     margin: 15px 0;
     padding: 5px;
@@ -3216,6 +3210,13 @@ hr {
     .home-left-navigation {
       display: block; } }
 
+.backpacker-close-button {
+  color: #facd20;
+  font-size: 3.5rem;
+  transition: all 250ms ease; }
+  .backpacker-close-button:hover {
+    color: #48525F; }
+
 .left-navigation--shown {
   left: 0; }
 
@@ -3223,6 +3224,36 @@ hr {
   width: 100%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.3); }
+
+.backpacker-modal-dialog {
+  padding: 10vh 5vh !important; }
+  .backpacker-modal-dialog .modal-header {
+    text-align: center; }
+  .backpacker-modal-dialog .modal-title {
+    font-size: 2rem;
+    color: #2f2933; }
+    @media (max-width: 768px) {
+      .backpacker-modal-dialog .modal-title {
+        font-size: 1.5rem; } }
+  .backpacker-modal-dialog .modal-body .modal-body__google-login-button {
+    background-color: #d03a3c;
+    color: #fff;
+    width: 80%;
+    height: 40px;
+    font-size: 1.5rem;
+    margin: auto;
+    border-radius: 5px; }
+    .backpacker-modal-dialog .modal-body .modal-body__google-login-button .google-login-button__icon {
+      float: left;
+      padding: 9px 10px; }
+    .backpacker-modal-dialog .modal-body .modal-body__google-login-button .google-login-button__text {
+      padding: 9px 10px; }
+  .backpacker-modal-dialog .modal-footer .backpacker-close-button {
+    opacity: 0.8;
+    font-size: 2.75rem; }
+    @media (max-width: 768px) {
+      .backpacker-modal-dialog .modal-footer .backpacker-close-button {
+        font-size: 2.5rem; } }
 
 .home-slider-container {
   margin-top: -48px;
