@@ -3184,29 +3184,25 @@ hr {
 .home-left-navigation, .home-right-fading {
   top: 0;
   height: 100vh;
-  position: fixed;
-  display: none; }
-  @media (max-width: 768px) {
-    .home-left-navigation, .home-right-fading {
-      display: block; } }
+  position: fixed; }
 
 .home-left-navigation {
   width: 70%;
   z-index: 10;
-  left: 0;
+  left: -70%;
   font-family: Comfortaa;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   letter-spacing: 1px;
   background-color: #fff;
   color: #2f2933;
   padding: 30px 45px;
-  transition: all 200ms ease; }
+  transition: all 250ms ease; }
   .home-left-navigation .home-left-navigation__back-button {
     text-align: right; }
   .home-left-navigation i {
     color: #facd20;
     font-size: 3.5rem;
-    transition: all 200ms ease; }
+    transition: all 250ms ease; }
     .home-left-navigation i:hover {
       color: #48525F; }
   .home-left-navigation .home-left-navigation__list-link .home-header__modal-link {
@@ -3216,9 +3212,12 @@ hr {
     .home-left-navigation .home-left-navigation__list-link .home-header__modal-link:hover {
       color: #fff;
       background: #facd20; }
+  @media (max-width: 768px) {
+    .home-left-navigation {
+      display: block; } }
 
-.left-navigation--hidden {
-  left: -70%; }
+.left-navigation--shown {
+  left: 0; }
 
 .home-right-fading {
   width: 100%;

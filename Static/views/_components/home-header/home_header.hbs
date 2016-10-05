@@ -48,9 +48,27 @@
 <div class="home-right-fading close-left-navigation"></div>
 
 <script>
-    $(".close-black-button").on('click tap', function () {
-        $(".home-right-fading").fadeOut(200);
 
+    //Hide navigation when reload page
+    $(document).ready(function() {
         $(".home-left-navigation").addClass("left-navigation--hidden");
+
+         $(".home-right-fading").fadeOut(0);
+    });
+
+    //Close left header navigation
+    $(".close-left-navigation").on('click tap', function () {
+        $(".home-right-fading").fadeOut(250);
+
+        $(".home-left-navigation").removeClass("left-navigation--shown");
+    });
+
+    //Open left header navigation
+    $(".home-nav-button").on('click tap', function () {
+        $(".home-right-fading").css("display","none");
+
+        $(".home-left-navigation").addClass("left-navigation--shown");
+
+        $(".home-right-fading").fadeIn(250);
     });
 </script>
