@@ -1,6 +1,8 @@
 .home-slider-container {
-    margin-top: -43px;
+    margin-top: -48px;
     width: 100%;
+    font-family: $FONT-FAMILY;
+    letter-spacing: $LETTER_SPACING_2;
 
     .home-slider-wrap {
         position: relative;
@@ -14,17 +16,56 @@
         }
     }
 
+    .home-slider-content {
+        height: 100vh;
+        margin-top: -100vh;
+        position: absolute;
+
+        .backpacker-big-logo {
+            margin-top: 30vh;
+        }
+    }
+
     @media (max-width: $BIG_TABLET){
         display: none;
     }
 }
 
 .home-image-responsive {
-    margin-top: -43px;
+    margin-top: -48px;
     width: 100%;
+    background-size: cover !important;
+    background-position: center !important;
 
     & > img {
         width: 100%;
+    }
+
+    .home-slider-content {
+        @media (max-width: $BIG_TABLET){
+            padding: 150px 0;
+
+            .backpacker-main-quote {
+                font-size: 2rem;
+            }
+
+            .backpacker-about-us-button {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media(max-width: $BIG_PHONE){
+            padding: 80px 0;
+
+            .backpacker-main-quote {
+                font-size: 1.5rem;
+            }
+
+            .backpacker-about-us-button {
+                font-size: 1.5rem;
+                padding: 10px 25px;
+            }
+        }
     }
         
     @media (min-width: $BIG_TABLET){
@@ -34,4 +75,53 @@
     @media(max-width: $BIG_TABLET){
         display: block;
     }
+}
+
+.home-slider-content {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+
+    .backpacker-big-logo {
+        font-size: 9rem;
+        text-shadow: 
+            -1px 0 $YELLOW,
+            0 1px $YELLOW,
+            1px 0 $YELLOW,
+            0 -1px $YELLOW;
+
+        @media (max-width: $BIG_TABLET){
+            font-size: 6rem;
+        }
+
+        @media (max-width: $BIG_PHONE){
+            font-size: 4rem;
+        }
+    }
+
+    .backpacker-main-quote {
+        font-size: 2rem;
+        color: $WHITE;
+        margin: -10px 0 40px;
+    }
+
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    .backpacker-about-us-button {
+        font-size: 2rem;
+        border-radius: 1px;
+        padding: 15px 45px;
+        background-color: #facd20;
+        color: #48525F;
+        transition: all 200ms ease;
+
+        &:hover {
+            background-color: #48525F;
+            color: #facd20;
+        }
+    }
+
+
 }

@@ -1,10 +1,11 @@
 .home-header {
     display: flex;
     flex-direction: row;
-    color: white;
+    color: $WHITE;
     position: relative;
     z-index: 5;
-    font-family: Delius;
+    font-family: $FONT-FAMILY;
+    letter-spacing: $LETTER_SPACING_1;
 
     background: none; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0.65) 0, rgba(0,0,0,0.15) 65%, rgba(0,0,0,0.05) 85%, rgba(0,0,0,0) 100%); /* For Safari 5.1 to 6.0 */
@@ -18,7 +19,7 @@
 
     .home-header__logo-container {
         float: left;
-        padding: 10px;
+        padding: 10px 15px;
         font-size: 20px;
         cursor: pointer;
         margin: 0 5px;
@@ -32,7 +33,7 @@
         }
 
         .backpacker-logo {
-            color: white;
+            color: $WHITE;
         }
     }
 
@@ -49,7 +50,7 @@
 
         .home-header__modal-link {
             cursor: pointer;
-            padding: 10px;
+            padding: 10px 12px;
 
             @media (max-width: $TABLET){
                 font-size: 12px;
@@ -61,5 +62,98 @@
         }
     }
 
-    
+    @media (max-width: $BIG_PHONE){
+        display: none;
+    }
+}
+
+.home-nav-button {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 5px 8px;
+    background-color: $YELLOW;
+    position: fixed;
+    z-index: 10;
+
+    &:hover {
+        background-color: $BLUE_GRAY;
+
+        i {
+            color: $YELLOW;
+        }
+    }
+
+    i {
+        color: $BLUE_GRAY;
+    }
+
+    display: none;
+
+    @media (max-width: $BIG_PHONE){
+        display: block;
+    }
+}
+
+.home-left-navigation, .home-right-fading {
+    top: 0;
+    height: 100vh;
+    position: fixed;
+    display: none;
+
+    @media (max-width: $BIG_PHONE){
+        display: block;
+    }
+}
+
+.home-left-navigation {
+    width: 70%;
+    z-index: 10;
+    left: 0;
+    font-family: $FONT-FAMILY;
+    font-size: 2.25rem;
+    letter-spacing: $LETTER_SPACING_1;
+    background-color: $WHITE;
+    color: $DARK_GRAY;
+    padding: 30px 45px;
+    transition: all 200ms ease;
+
+    .home-left-navigation__back-button {
+        text-align: right;
+    }
+
+    i {
+        color: $YELLOW;
+        font-size: 3.5rem;
+        transition: all 200ms ease;
+
+        &:hover {
+            color: $BLUE_GRAY;
+        }
+    }
+
+    .home-left-navigation__list-link {
+        .home-header__modal-link {
+            margin: 15px 0;
+            padding: 5px;
+            border-bottom: 1px solid $YELLOW;
+
+            &:hover {
+                color: #fff;
+                background: $YELLOW;
+            }
+        }
+    }
+}
+
+.left-navigation--hidden {
+    left: -70%;
+}
+
+.home-right-fading {
+    width: 100%;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.3);
 }

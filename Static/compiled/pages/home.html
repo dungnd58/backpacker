@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa">
     
     <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
 
@@ -45,8 +45,45 @@
         <div class="home-header__modal-link">
             <span>Log In</span>
         </div>
+        <div class="home-header__modal-link">
+            <span>Contact Us</span>
+        </div>
     </div>
 </div>
+
+<div class="home-nav-button">
+    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+</div>
+
+<div class="home-left-navigation">
+    <div class="home-left-navigation__container">
+        <div class="home-left-navigation__back-button">
+            <i class="fa fa-times close-left-navigation" aria-hidden="true"></i>
+        </div>
+        <div class="home-left-navigation__list-link">
+            <div class="home-header__modal-link">
+                <span>Sign Up</span>
+            </div>
+            <div class="home-header__modal-link">
+                <span>Log In</span>
+            </div>
+            <div class="home-header__modal-link">
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- disable scrolling when left navigation is shown -->
+<div class="home-right-fading close-left-navigation"></div>
+
+<script>
+    $(".close-black-button").on('click tap', function () {
+        $(".home-right-fading").fadeOut(1500);
+
+        $(".home-left-navigation").addClass("left-navigation--hidden");
+    });
+</script>
 
         
 <div class="home-slider-container">
@@ -59,10 +96,20 @@
         <img class="home-slider-image" src="/img/singapore.jpg" />
         
     </div>
+
+    <div class="home-slider-content">
+        <p class="backpacker-big-logo">Backpacker</p>
+        <p class="backpacker-main-quote">To Travel Is To Live</p>
+        <a class="backpacker-about-us-button">About Us</a>
+    </div>
 </div>
 
-<div class="home-image-responsive">
-    <img class="home-slider-image" src="/img/london.jpg" />
+<div class="home-image-responsive" style="background: url('/img/london.jpg')">
+    <div class="home-slider-content">
+        <p class="backpacker-big-logo">Backpacker</p>
+        <p class="backpacker-main-quote">To Travel Is To Live</p>
+        <a class="backpacker-about-us-button">About Us</a>
+    </div>
 </div>
 
 <script>
@@ -156,6 +203,86 @@
         $(this).siblings(".location__short-desc").fadeIn(500);
     });
 </script>
+
+        
+<div class="home-features-section-container">
+
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Discover new countries and culture.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Meet new friends from all around the world.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Prepare for your future trips.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Share greate moments of your adventures.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+        
+<div class="lets-discovery-container">
+    <div class="lets-discovery-container__item" style="background: url('/img/lets_discovery.jpg')">
+        <div class="lets-discovery-item__content" >
+            <p class="item-title">Discovery new lands</p>
+            <a class="item-button">Let's Discovery</a>
+        </div>
+    </div>
+
+    <div class="lets-discovery-container__item" style="background: url('/img/join_us.jpg')">
+        <div class="lets-discovery-item__content">
+            <p class="item-title">Join with us</p>
+            <a class="item-button">Register</a>
+        </div>
+    </div>
+</div>
     </div>
 </body>
 

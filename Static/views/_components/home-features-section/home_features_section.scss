@@ -1,0 +1,47 @@
+.home-features-section-container {
+    font-family: $FONT-FAMILY;
+    letter-spacing: $LETTER_SPACING_1;
+    
+    .home-features-section__wrap {
+        width: 100%;
+        background-color: $WHITE;
+        text-align: center;
+        padding: 50px 0;
+
+        &:nth-child(2n) {
+            background-color: $WHITE_GRAY;
+        }
+
+        .home-features-section__icons {
+            display: inline-block;
+            position: relative;
+            margin: 0 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .home-features-section__content {
+            width: 50%;
+            margin-bottom: 20px;
+            display: inline-block;
+            position: relative;
+            font-size: 2.5rem;
+
+            @media (max-width: $BIG_PHONE){
+                font-size: 2rem;
+            }
+
+            .orange-devider {
+                width: 100px;
+                height: 3px;
+                background-color: $ORANGE;
+                margin: 20px auto 30px auto;
+            }
+        }
+
+        
+    }
+}

@@ -1,0 +1,60 @@
+.lets-discovery-container {
+    background-color: $BLUE_GRAY;
+    width: 100%;
+    font-family: $FONT-FAMILY;
+    font-weight: bold;
+    letter-spacing: $LETTER_SPACING_2;
+
+    .lets-discovery-container__item {
+        display: inline-block;
+        width: 50%;
+        height: 250px;
+        float: left;
+        cursor: pointer;
+        background-size: cover !important;
+        background-position: center !important; 
+
+        .lets-discovery-item__content {
+            height: 100%;
+            padding: 80px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            
+            a, a:hover {
+                text-decoration: none;
+            }
+
+            .item-title {
+                font-size: 2rem;
+                color: $YELLOW;
+                padding: 10px 0;
+
+                @media (max-width: $BIG_PHONE){
+                    font-size: 1.75rem;
+                }
+            }
+
+            .item-button {
+                font-size: 1.5rem;
+                border-radius: 2px;
+                padding: 10px 20px;
+                background-color: #facd20;
+                color: #48525F;
+                transition: all 200ms ease;
+
+                &:hover {
+                    background-color: #48525F;
+                    color: #facd20;
+                }
+
+                @media (max-width: $BIG_PHONE){
+                    font-size: 1.275rem;
+                }
+            } 
+        }
+
+        @media (max-width: $BIG_PHONE){
+            width: 100%;
+        }
+    }
+}

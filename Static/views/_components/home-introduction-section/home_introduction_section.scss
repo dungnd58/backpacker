@@ -1,19 +1,20 @@
 
 .introduction-container {
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
-    background-color: white;
-    font-family: Delius;
+    background-color: $WHITE;
+    font-family: $FONT-FAMILY;
+    letter-spacing: $LETTER_SPACING_1;
 
     .introduction-container__big-title {
         font-size: 3rem;
-        color: #2f2933;
+        color: $DARK_GRAY;
         font-weight: bolder;
     }
 
     .introduction-container__quote {
         font-size: 1.875rem;
-        color: #595a5a;
+        color: $GRAY;
 
         .home-quote:first-child {
             font-style: italic
@@ -21,7 +22,7 @@
     }
 
     .sml-section-divider {
-        background: #facd20; 
+        background: $YELLOW; 
         margin: 20px auto 30px;
         height: 5px;
         width: 100px;
@@ -29,7 +30,7 @@
 
     .introduction-container__long-desc {
         font-size: 1.5rem;
-        color: #6a7885;
+        color: $LIGHT_GRAY;
         line-height: 2;
     }
 
@@ -54,7 +55,6 @@
 
         .introduction-container__long-desc {
             font-size: 1.275rem;
-            color: #6a7885;
             line-height: 1.5;
         }
     }
@@ -66,7 +66,7 @@
     margin-top: 50px;
     width: 100%;
     padding: 25px 0;
-    background-color: #48525F;
+    background-color: $BLUE_GRAY;
     font-family: Delius;
 
     li {
@@ -79,7 +79,7 @@
 
         .locations-list__item {
             display: inline-block;
-            color: white;
+            color: $WHITE;
             width: 200px;
             min-height: 270px;
             margin: 15px;
@@ -96,7 +96,7 @@
                 width: 150px;
                 height: 150px;
                 border-radius: 50%;
-                border: 2px solid white;
+                border: 2px solid $WHITE;
                 -webkit-transition: all 0.5s linear; /* For Safari 3.1 to 6.0 */
                 -moz-transition: all 0.5s linear; /* For Chrome */
                 -o-transition: all 0.5s linear; /* For Opera */
