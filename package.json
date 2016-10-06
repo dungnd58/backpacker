@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "owner ducdung.ngo",
   "main": "Gruntfile.js",
+  "private": true,
   "scripts": {
-    "test": "Hello! Duc Dung"
+    "prod": "gulp --production",
+    "dev": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,15 @@
   },
   "homepage": "https://github.com/dungnd58/backpacker#readme",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-vue-2": "^0.2.0",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2",
+    "vue": "^2.0.1",
+    "vue-resource": "^1.0.3",
     "almond": "^0.3.3",
     "assemble": "^0.4.42",
     "fs-readdir-recursive": "^1.0.0",
@@ -36,7 +47,6 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.1",
     "jit-grunt": "^0.10.0",
-    "lodash": "^4.16.1",
     "path": "^0.12.7",
     "slash": "^1.0.0"
   }

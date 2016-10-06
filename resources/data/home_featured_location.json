@@ -1,0 +1,21 @@
+{
+    "items": [
+        {
+            "image": "/public/img/sapa.jpg",
+            "name": "Sapa, Lao Cai",
+            "description": "Ideas, business, and technologies never go without one another."
+        },
+
+        {
+            "image": "/public/img/hanoi.jpg",
+            "name": "Hanoi",
+            "description": "Ideas, business, and technologies never go without one another."
+        },
+
+        {
+            "image": "/public/img/dalat.jpg",
+            "name": "Dalat",
+            "description": "Ideas, business, and technologies never go without one another."
+        }
+    ]
+}

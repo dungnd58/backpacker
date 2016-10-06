@@ -1,0 +1,15 @@
+{
+    "items": [
+        {
+            "bg-image": "/public/img/paris.jpg"
+        },
+
+        {
+            "bg-image": "/public/img/london.jpg"
+        },
+
+        {
+            "bg-image": "/public/img/singapore.jpg"
+        }
+    ]
+}

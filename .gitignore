@@ -1,7 +1,7 @@
-bower_components
-node_modules
-css/print.css
-*.css
-*.css
-css/print.css
-css/screen.css
+/node_modules
+/public/storage
+/vendor
+/.idea
+Homestead.json
+Homestead.yaml
+.env

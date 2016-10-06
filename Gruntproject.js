@@ -1,9 +1,9 @@
 var path = require('path');
 
 const 
-	BASE_DIR = 'Static',
+	BASE_DIR = 'resources',
     STATIC_DIR = path.join(BASE_DIR, 'compiled'),
-    RESOURCES_DIR = path.join(BASE_DIR, '../'),
+    RESOURCES_DIR = path.join(BASE_DIR, '../public/'),
 	CLIENT_SCRIPTS_DIR = path.join(BASE_DIR, 'scripts'),
     CLIENT_STYLES_DIR = path.join(BASE_DIR, 'styles'),
     CLIENT_FONTS_DIR = path.join(BASE_DIR, 'fonts'),

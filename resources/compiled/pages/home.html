@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title> Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa">
+    
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script src="https://use.fontawesome.com/38a0f644b3.js"></script>
+    <link href="/public/css/screen.css" rel="stylesheet" media="screen" />
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+</head>
+
+<body class="bg-white">
+
+    
+<body>
+    <div>
+        
+<!-- Header navigation on Desktop screen -->
+<div class="home-header">
+    <div class="home-header__logo-container">
+        <a class="home-header__logo-wrap" href="#">
+            <span class="backpacker-logo">BackPacker</span>
+        </a>
+    </div>
+
+    <div class="home-header__mobile-space"></div>
+
+    <div class="home-header__right">
+        <div class="home-header__modal-link" data-toggle="modal" data-target="#signUpModal">
+            <span>Sign Up</span>
+        </div>
+        <div class="home-header__modal-link" data-toggle="modal" data-target="#logInModal">
+            <span>Log In</span>
+        </div>
+        <div class="home-header__modal-link">
+            <span>Contact Us</span>
+        </div>
+    </div>
+</div>
+
+<!-- humbeger icon button -->
+<div class="home-nav-button">
+    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+</div>
+
+<!-- Left navigation shown when responsive -->
+<div class="home-left-navigation">
+    <div class="home-left-navigation__container">
+        <div class="home-left-navigation__back-button">
+            <i class="fa fa-times backpacker-close-button close-left-navigation" aria-hidden="true"></i>
+        </div>
+        <div class="home-left-navigation__list-link">
+            <div class="home-header__modal-link" data-toggle="modal" data-target="#signUpModal">
+                <span>Sign Up</span>
+            </div>
+            <div class="home-header__modal-link" data-toggle="modal" data-target="#logInModal">
+                <span>Log In</span>
+            </div>
+            <div class="home-header__modal-link">
+                <span>Contact Us</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- disable scrolling when left navigation is shown -->
+<div class="home-right-fading close-left-navigation"></div>
+
+<!-- MODAL BOOTSTRAP -->
+<div id="signUpModal" class="modal fade" role="dialog">
+    <div class="modal-dialog backpacker-modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign up and start your journey!</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Log in Form -->
+                <form class="modal-body__form-login-container">
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="text" name="b_username" id="b_username" placeholder="Username" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="text" name="b_email" id="b_email" placeholder="Email" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="password" name="b_password" id="b_password" placeholder="Password" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__submit">
+                        <input type="submit" value="Sign Up"/>
+                        <div>By signing up, you agree to our <a>Terms of Use</a> and <a>Privacy Policy</a>.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+               <div class="modal-footer__register-modal-link">
+                    Already have an account? <span data-toggle="modal" data-target="#logInModal" data-dismiss="modal">Login<span>
+                </div>
+                <i class="fa fa-times close backpacker-close-button" data-dismiss="modal" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="logInModal" class="modal fade" role="dialog">
+    <div class="modal-dialog backpacker-modal-dialog">
+    <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login to your account!</h4>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body__google-login-button">
+                    <div class="google-login-button__icon">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </div>
+                     <div class="google-login-button__text">
+                        <span>Continue with Google</span>
+                    </div>
+                </div>
+
+                <!-- Log in Form -->
+                <form class="modal-body__form-login-container">
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="text" name="b_username" id="b_username" placeholder="Username" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__item">
+                        <div class="form-login-input__icon">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-login-input__field">
+                            <input type="password" name="b_password" id="b_password" placeholder="Password" required/>
+                        </div>
+                    </div>
+
+                    <div class="form-login-input__submit">
+                        <input type="submit" value="Login"/>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer__register-modal-link">
+                    Don't have an account? <span data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">Sign up<span>
+                </div>
+                <i class="fa fa-times close backpacker-close-button" data-dismiss="modal" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //Hide navigation when reload page
+    $(document).ready(function() {
+        $(".home-right-fading").fadeOut(0);
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 768) {
+                $(".home-right-fading").fadeOut(0);
+                $(".home-left-navigation").removeClass("left-navigation--shown");
+            }
+        });
+    });
+
+    //Close left header navigation
+    $(".close-left-navigation").on('click tap', function () {
+        $(".home-right-fading").fadeOut(250);
+
+        $(".home-left-navigation").removeClass("left-navigation--shown");
+
+        //Disable scrolling
+        $(document.body).removeClass("overflow-hidden");
+    });
+
+    //Open left header navigation
+    $(".home-nav-button").on('click tap', function () {
+        $(".home-right-fading").css("display","none");
+
+        $(".home-left-navigation").addClass("left-navigation--shown");
+
+        $(".home-right-fading").fadeIn(250);
+
+        $(document.body).addClass("overflow-hidden");
+    });
+</script>
+
+        
+<div class="home-slider-container">
+    <div class="home-slider-wrap">
+        
+        <img class="home-slider-image" src="/public/img/paris.jpg" />
+        
+        <img class="home-slider-image" src="/public/img/london.jpg" />
+        
+        <img class="home-slider-image" src="/public/img/singapore.jpg" />
+        
+    </div>
+
+    <div class="home-slider-content">
+        <p class="backpacker-big-logo">Backpacker</p>
+        <p class="backpacker-main-quote">To Travel Is To Live</p>
+        <a class="backpacker-about-us-button">About Us</a>
+    </div>
+</div>
+
+<div class="home-image-responsive" style="background: url('/public/img/london.jpg')">
+    <div class="home-slider-content">
+        <p class="backpacker-big-logo">Backpacker</p>
+        <p class="backpacker-main-quote">To Travel Is To Live</p>
+        <a class="backpacker-about-us-button">About Us</a>
+    </div>
+</div>
+
+<script>
+    $(".home-slider-wrap > img:gt(0)").hide();
+
+    setInterval(function () {
+        $('.home-slider-wrap > img:first')
+          .fadeOut(1500)
+          .next()
+          .fadeIn(1500)
+          .end()
+          .appendTo('.home-slider-wrap');
+    }, 4000);
+</script>
+
+
+
+        
+<div class="introduction-container container">
+    <div class="introduction-container__big-title">
+        <p class="home-big-title">
+            We Connect Travellers From All Around The World
+        </p>
+    </div>
+
+    <div class="introduction-container__quote">
+        <p class="home-quote">
+           "We travel, some of us forever, to seek other places, other lives, other souls."
+        </p>
+        <p class="home-quote">
+            - Anais Nin -
+        </p>
+    </div>
+
+    <div class="sml-section-divider"></div>
+
+    <div class="introduction-container__long-desc">
+        Ideas, business, and technologies never go without one another. We offer complete and custom services with a combination of technologies, systems, and software development - alongside world-class client relationship management to ensure quality and satisfaction.
+    </div>
+</div>
+
+<div class="introduction-container__list-location">
+    <div class="locations-list-container container">
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/public/img/sapa.jpg)">
+                </div>
+                <div class="location__name">
+                    Sapa, Lao Cai
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/public/img/hanoi.jpg)">
+                </div>
+                <div class="location__name">
+                    Hanoi
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+        <div class="locations-list__item">
+            <div class="location-item-container">
+                <div class="location__image" style="background-image: url(/public/img/dalat.jpg)">
+                </div>
+                <div class="location__name">
+                    Dalat
+                </div>
+                <div class="location__short-desc">
+                    Ideas, business, and technologies never go without one another.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    $(".location__image").hover(function () {
+        $(this).siblings(".location__short-desc").fadeOut(500);
+    }, function () {
+        $(this).siblings(".location__short-desc").fadeIn(500);
+    });
+</script>
+
+        
+<div class="home-features-section-container">
+
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Discover new countries and culture.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/public/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Meet new friends from all around the world.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/public/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Prepare for your future trips.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/public/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-features-section__wrap">
+        <div class="container">
+            <div class="home-features-section__content">
+                <p class="feature__content">Share greate moments of your adventures.</p>
+                <div class="orange-devider"></div>
+            </div>
+
+
+            <div class="home-features-section__icons">
+                <img src="/public/img/sapa.jpg" />
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+        
+<div class="lets-discovery-container">
+    <div class="lets-discovery-container__item" style="background: url('/public/img/lets_discovery.jpg')">
+        <div class="lets-discovery-item__content" >
+            <p class="item-title">Discovery new lands</p>
+            <a class="item-button">Let's Discovery</a>
+        </div>
+    </div>
+
+    <div class="lets-discovery-container__item" style="background: url('/public/img/join_us.jpg')">
+        <div class="lets-discovery-item__content">
+            <p class="item-title">Join with us</p>
+            <a class="item-button">Register</a>
+        </div>
+    </div>
+</div>
+    </div>
+</body>
+
+    <script src="/public/js/lib/bower/require.js" data-main="/public/js/main-async"></script>
+
+</body>
+
+</html>
