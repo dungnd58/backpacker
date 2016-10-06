@@ -166,6 +166,9 @@
             if ($(window).width() > 768) {
                 $(".home-right-fading").fadeOut(0);
                 $(".home-left-navigation").removeClass("left-navigation--shown");
+
+                //Disable scrolling
+                $(document.body).removeClass("overflow-hidden");
             }
         });
     });

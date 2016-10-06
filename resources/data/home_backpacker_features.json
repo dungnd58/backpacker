@@ -1,7 +1,12 @@
 {
     "items": [
         {
-            "content": "Discover new countries and culture."
+            "content": "Discover new countries and culture.",
+            "icons": [
+                {
+                    "src":  "/public/img/earth.png"
+                }
+            ]
         },
 
         {
